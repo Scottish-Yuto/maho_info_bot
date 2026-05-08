@@ -1,6 +1,3 @@
-"""
-Renderのサーバーに、「このBotを動かすには、このライブラリをインストールしてね！」と教えるための説明書
-"""
 discord.py
 feedparser
 Flask
