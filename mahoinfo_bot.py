@@ -8,7 +8,7 @@ import os
 # --- 設定 ---
 # トークンを直接書かず、環境変数から読み込む
 TOKEN = os.getenv('DISCORD_TOKEN')
-CHANNEL_ID = 1502162120974925844  # ニュースを流したいチャンネルのID
+CHANNEL_ID = 1502220617208823859  # ニュースを流したいチャンネルのID
 RSS_URLS = [
     'https://natalie.mu/eiga/feed/news'
 ]
