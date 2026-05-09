@@ -10,8 +10,7 @@ import os
 TOKEN = os.getenv('DISCORD_TOKEN')
 CHANNEL_ID = 1502220617208823859  # ニュースを流したいチャンネルのID
 RSS_URLS = [
-    'https://natalie.mu/eiga/feed/news',
-    'https://natalie.mu/eiga/feed/column'
+    'https://natalie.mu/eiga/feed/news'
 ]
 
 # 最後に取得した記事のURLを保存する変数（重複投稿防止）
