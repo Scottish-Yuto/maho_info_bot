@@ -1,5 +1,6 @@
 from flask import Flask
 from threading import Thread
+import os
 
 """
 Renderの無料枠でBotを動かす場合、「Webサイトとしての機能（アクセスできるページ）を持たせないと、エラーだと勘違いされて強制終了させられてしまう」というルールがある。
@@ -13,8 +14,9 @@ def home():
     return "maho-info is running!"
 
 def run():
-    # Renderが指定するポートで待機します
-    app.run(host='0.0.0.0', port=8080)
+    # Renderから割り当てられるポート番号を取得し、なければ8080を使う
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
     t = Thread(target=run)
